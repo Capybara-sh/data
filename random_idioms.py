@@ -20,6 +20,6 @@ def create_tiny_idioms(input_file, output_file, sample_size=500):
     print(f'新文件已保存为: {output_file}')
 
 if __name__ == '__main__':
-    input_file = 'idiom-4-char.json'
-    output_file = 'idiom-4-char-tiny.json'
+    input_file = 'idiom-4-char-valid.json'
+    output_file = 'idiom-4-char-valid-tiny.json'
     create_tiny_idioms(input_file, output_file) 
