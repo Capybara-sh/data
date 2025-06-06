@@ -16,10 +16,10 @@ def create_tiny_idioms(input_file, output_file, sample_size=500):
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(sampled_idioms, f, ensure_ascii=False, indent=2)
     
-    print(f'成功从{len(idioms)}个成语中随机抽取{sample_size}个成语')
+    print(f'成功从{len(idioms)}个四字成语中随机抽取{sample_size}个成语')
     print(f'新文件已保存为: {output_file}')
 
 if __name__ == '__main__':
-    input_file = 'idiom.json'
-    output_file = 'idiom-tiny.json'
+    input_file = 'idiom-4-char.json'
+    output_file = 'idiom-4-char-tiny.json'
     create_tiny_idioms(input_file, output_file) 

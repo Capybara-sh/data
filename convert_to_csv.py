@@ -10,8 +10,8 @@ def convert_json_to_csv():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     
     # Input and output file paths
-    json_file = os.path.join(current_dir, 'idiom.json')
-    csv_file = os.path.join(current_dir, 'idiom.csv')
+    json_file = os.path.join(current_dir, 'idiom-4-char.json')
+    csv_file = os.path.join(current_dir, 'idiom-4-char.csv')
     
     try:
         # Read JSON file
@@ -31,7 +31,7 @@ def convert_json_to_csv():
             writer.writerows(data)
             
         print(f"Successfully converted {json_file} to {csv_file}")
-        print(f"Total records processed: {len(data)}")
+        print(f"Total four-character idioms processed: {len(data)}")
         
     except json.JSONDecodeError as e:
         print(f"Error reading JSON file: {e}")
